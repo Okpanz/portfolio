@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer components {
+    .container {
+      @apply mobile:max-w-[600px] tablet:max-w-[900px] desktop:max-w-[1200px];
+    }
+  } */
