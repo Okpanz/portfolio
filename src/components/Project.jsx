@@ -114,7 +114,7 @@ const Projects = () => {
                                 return (
                         <label key={item.id}>
                             <div className="  justify-center text-center my-5 border p-2 border-[orange] rounded-[10px]">
-                            <img src={item.img} alt="" className="rounded-full" /> 
+                            <img src={item.img} alt="" className="rounded-full w-full" /> 
                               <p className="ml-auto text-white text-sm">{item.title}</p> 
                             </div>
                         </label>

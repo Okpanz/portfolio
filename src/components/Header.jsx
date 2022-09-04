@@ -20,12 +20,12 @@ const Header = () => {
             item: "About me",
             link: "#about"
         }
-        ,
-        {
-            id: "4",
-            item: "Resume",
-            link: "#about"
-        }
+        // ,
+        // {
+        //     id: "4",
+        //     item: "Resume",
+        //     link: "https://drive.google.com/file/d/1DA7JoTZaIAoBaxMeaCpTzo0eYiF_qlIC/view?usp=sharing"
+        // }
 
     ]
 
@@ -60,10 +60,14 @@ const Header = () => {
                         {
                             navItem.map(nav => (
                                 <Link key={nav.id} to={nav.link}>
-                                    <li className="text-white md:text-center text-left-right bg- text-2xl hover:text-primary duration-500 cursor-pointer" key={nav.id}>{nav.item}</li>
+                                    <li className="text-white md:text-center text-left-right bg- text-2xl md:hover:text-[orange] hover:text-primary duration-500 cursor-pointer" key={nav.id}>{nav.item}</li>
                                 </Link>
                             ))
                         }
+                        <a href="https://drive.google.com/file/d/1DA7JoTZaIAoBaxMeaCpTzo0eYiF_qlIC/view?usp=sharing">
+                                    <li className="text-white md:text-center text-left-right bg- text-2xl md:hover:text-[orange] hover:text-primary duration-500 cursor-pointer">Resume</li>
+                        </a>
+                        
                     </ul>
                     <div>
                         {/* <p className="text-white font-poppins">Okpanz</p> */}

@@ -31,7 +31,7 @@ const Tech = [
     },
     {
         id : 4,
-        img : "images/bootstrap.png",
+        img : "images/tailwind.png",
         title: "Tailwindcss"
     },
     {
