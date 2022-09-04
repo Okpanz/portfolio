@@ -4,16 +4,18 @@ import About from "../components/About";
 import Projects from "../components/Project";
 const LandingPage = () => {
     return (
-        <>
+        <div>
             <div className="">
-
+            
                 <Header />
+            </div>
+            <div className="">
                 <Intro />
                 <Projects />
                 <About />
             </div>
 
-        </>
+        </div>
     );
 }
 

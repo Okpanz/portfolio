@@ -27,20 +27,20 @@ const About = () => {
     return (
         <>
             <div id="about">
-                <h1 className="text-3xl font-poppins text-white  ml-10 my-5">About Me</h1>
-                <p className="text-2sm font-poppins text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, iste. Odit blanditiis est quibusdam cumque <br /> tempora totam nisi facere quae, porro deleniti voluptates fuga modi sapiente ea asperiores illo vel!</p>
+                <h1 className="text-3xl font-poppins text-white w-2/3 md:w-1/2 ml-auto mr-auto my-5">About Me</h1>
+                <p className="text-2sm font-poppins w-[22rem] md:w-1/2 ml-auto mr-auto text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, iste. Odit blanditiis est quibusdam cumque <br /> tempora totam nisi facere quae, porro deleniti voluptates fuga modi sapiente ea asperiores illo vel!</p>
                 <div className="flex flex-row justify-center my-20">
                     {
                         handles.map((item => {
                             return (
                                 <div>
                                     <div className="flex items-center text-center mx-5">
-                                    <img src={item.avatar} className="w-[2rem]" />
-                                    <h1 className="text-white font-poppins mx-2 text-3xl text-left">
+                                    <img src={item.avatar} className=" md:w-[2rem] w-[1rem]" />
+                                    <h1 className="text-white md:block text-sm text-center font-poppins mx-2 md:text-3xl text-">
                                         {item.name} 
                                     </h1>
                                     </div>
-                                    <p className="text-white font-poppins mx-2 text-3xl text-left">
+                                    <p className="text-white text-sm  font-poppins mx-2 md:text-3xl md:text-left">
                                         <a href={item.link}>   {item.real}</a>
 
                                     </p>

@@ -1,5 +1,6 @@
 import ProgressBar from "@ramonak/react-progress-bar";
-
+import Button from './button'
+import {Tech} from "../data"
 const Projects = () => {
 
     const projectData = [
@@ -82,7 +83,7 @@ const Projects = () => {
     return (
         <>
             <div id="projects">
-
+     
                 <h1 className="text-white text-5xl font-poppins text-left ml-10">Projects</h1>
 
                 <div className="flex justify-center flex-wrap flex-[1]">
@@ -90,11 +91,12 @@ const Projects = () => {
                         projectData.map((item => {
                             return (
                                 <div key={item.id} className="my-4">
-                                    <div className="ml-10  bg-slate-50 h-full w-[23rem]  p-4 rounded-tl-3xl rounded-br-3xl">
+                                    <div className="md:ml-10  bg-slate-50 h-full md:w-[23rem] w-[18rem] p-4 rounded-tl-3xl rounded-br-3xl">
                                         <img src={item.projectImage} alt="" />
                                         <h2 className="font-poppins p-5"> {item.projectTitle}</h2>
                                         <p className="font-poppins ">{item.projectDescription}</p>
-                                        <button className="bg-orange-600 text-primary font-poppins mr-auto flex m-3 rounded-full px-3 py-1"> Check it Out </button>
+                                        {/* <button className="bg-orange-600 text-primary font-poppins mr-auto flex m-3 rounded-full px-3 py-1"> Check it Out </button> */}
+                                        <Button>Check it Out</Button>
                                     </div>
                                 </div>
                             )
@@ -102,33 +104,34 @@ const Projects = () => {
                         }))
                     }
                 </div>
-                <div id="tech">
+                <section id="tech" className="transition-all ease-in duration-700">
+                <div >
                     <h1 className="font-poppins text-white text-5xl text-left ml-10"> Technologies </h1>
                     
-                    <div className="font-poppins ml-auto mr-auto my-5 w-2/3">
+                    <div className="font-poppins ml-auto mr-auto my-5 md:w-1/2 w-[20rem] grid grid-cols-3 gap-4 flex-wrap">
                         {
-                            tech.map((item => {
+                            Tech.map((item => {
                                 return (
                         <label key={item.id}>
-                            <div className="flex items-center mt-8">
-                            <p className="text-white font-poppins text-xl text-left"> {item.language}</p>
-                              <p className="ml-auto text-white text-sm">{item.level}</p> 
+                            <div className="  justify-center text-center my-5 border p-2 border-[orange] rounded-[10px]">
+                            <img src={item.img} alt="" className="rounded-full" /> 
+                              <p className="ml-auto text-white text-sm">{item.title}</p> 
                             </div>
-                            <ProgressBar completed={item.progress} />
                         </label>
                                 )
                             }))
                         }
                     </div>
                 </div>
+                </section>
                 <div>
-                    <h1 className="text-white font-poppins text-3xl text-left ml-10 ">Additional Technologies and Skills</h1>
-                    <ul className="list-disc text-lg text-left ml-[10rem] md:ml-[20rem] text-white font-poppins">
+                    <h1 className="text-white font-poppins text-xl md:text-center my-2 md:text-3xl text-left ml-10 ">Additional Technologies and Skills</h1>
+                    <ul className="list-disc text-lg text-left ml-[4rem] md:ml-[20rem] text-white font-poppins">
                         
                     {
                         additional.map((item => {
                             return(
-                                <li key={item.id}>{item.item}</li>
+                                <li className="lg:ml-[20rem]" key={item.id}>{item.item}</li>
                             )
                         }))
                     }
