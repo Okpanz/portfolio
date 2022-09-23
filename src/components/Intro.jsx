@@ -8,7 +8,7 @@ const Intro = () => {
             <div className="grid md:grid-cols-2 ">
             <h1 className="text-white text-lg p-2 font-poppins text-left  md:ml-20">As a Front-End Developer My aim is to provide the best UI that can you can easily interact with and carryout online activities, <br />
             Building a fully responsive Website that will be available on all devices<br />
-             libero vero atque rerum?</h1>
+             As also a graphics designer with about 5 years experience of designing I'll offer graphics design that speaks art to you.</h1>
             <img src="" alt="" />
             <div className="">
             <button className="text-black bg-stone-200 px-5 py-2 rounded-3xl hover:bg-orange-500 transition-all ease-in duration-500 hover:text-white font-poppins">Let's Begin</button>
