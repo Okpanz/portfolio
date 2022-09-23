@@ -28,7 +28,7 @@ const About = () => {
         <>
             <div id="about">
                 <h1 className="text-3xl font-poppins text-white w-2/3 md:w-1/2 ml-auto mr-auto my-5">About Me</h1>
-                <p className="text-2sm font-poppins w-[22rem] md:w-1/2 ml-auto mr-auto text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, iste. Odit blanditiis est quibusdam cumque <br /> tempora totam nisi facere quae, porro deleniti voluptates fuga modi sapiente ea asperiores illo vel!</p>
+                <p className="text-2sm font-poppins w-[22rem] md:w-1/2 ml-auto mr-auto text-white">My Name is Okpanachi Emmanuel, A Frontend web Developer and Graphics Designer Skilled in JavaScript and CorelDraw <br /> tempora totam nisi facere quae, porro deleniti voluptates fuga modi sapiente ea asperiores illo vel!</p>
                 <div className="flex flex-row justify-center my-20">
                     {
                         handles.map((item => {
