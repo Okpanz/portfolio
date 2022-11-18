@@ -44,6 +44,11 @@ const Tech = [
         img : "images/github.png",
         title: "GitHub"
     },
+    {
+        id : 7,
+        img : "images/git.png",
+        title: "Git"
+    }
     
 ]
 module.exports = {

@@ -15,10 +15,10 @@ const handles = [
     },
     {
         id: "3",
-        name: "Git",
+        name: "GitHub",
         link: "https://github.com/Okpanz",
         avatar: "images/github.png",
-        real : "Okpanz"
+        real: "Okpanz"
     }
 ]
 
@@ -35,10 +35,10 @@ const About = () => {
                             return (
                                 <div>
                                     <div className="flex items-center text-center mx-5">
-                                    <img src={item.avatar} className=" md:w-[2rem] w-[1rem]" />
-                                    <h1 className="text-white md:block text-sm text-center font-poppins mx-2 md:text-3xl text-">
-                                        {item.name} 
-                                    </h1>
+                                        <img src={item.avatar} className=" md:w-[2rem] w-[1rem]" />
+                                        <h1 className="text-white md:block text-sm text-center font-poppins mx-2 md:text-3xl text-">
+                                            {item.name}
+                                        </h1>
                                     </div>
                                     <p className="text-white text-sm  font-poppins mx-2 md:text-3xl md:text-left">
                                         <a href={item.link}>   {item.real}</a>

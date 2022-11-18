@@ -1,30 +1,34 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import Button from './button'
+import {    Link   } from "react-router-dom";
+  
 import {Tech} from "../data"
 const Projects = () => {
 
     const projectData = [
         {
             id: 1,
-            projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
+            url : "https://buynbulk2022.vercel.app",
+            projectImage: "images/buynbulk.png",
             projectTitle: "BuynBulk",
-            projectDescription: "Lorem ipsum dolor sit amet Qui quibusdam consequuntur necessitatibus officia nostrum ea in. Voluptatem velit id,aliquid odio repellendus, eligendi architecto omnis laudantiumlibero vero atque rerum?"
+            projectDescription: "BuyinBulk is an Agriculture crowdfunding site that enables buyers and consumer come together buy a product of large quantity in bit by crowdfunding with othere interested consumers"
         }, {
             id: 2,
-            projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
-            projectTitle: "BuynBulk",
-            projectDescription: "Lorem ipsum dolor sit amet Qui quibusdam consequuntur necessitatibus officia nostrum ea in. Voluptatem velit id,aliquid odio repellendus, eligendi architecto omnis laudantiumlibero vero atque rerum?"
-        }, {
-            id: 3,
-            projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
-            projectTitle: "BuynBulk",
-            projectDescription: "Lorem ipsum dolor sit amet Qui quibusdam consequuntur necessitatibus officia nostrum ea in. Voluptatem velit id,aliquid odio repellendus, eligendi architecto omnis laudantiumlibero vero atque rerum?"
-        }, {
-            id: 4,
-            projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
-            projectTitle: "BuynBulk",
-            projectDescription: "Lorem ipsum dolor sit amet Qui quibusdam consequuntur necessitatibus officia nostrum ea in. Voluptatem velit id,aliquid odio repellendus, eligendi architecto omnis laudantiumlibero vero atque rerum?"
-        },
+            projectImage: "images/pis.png",
+            projectTitle: "Plateau State Investment",
+            projectDescription: "PSOSIC is a plateau state government website for investment and tourist attraction to the home of Tourism Plateau State is the twelfth largest state of Nigeria, and is roughly located in the center of the country. "
+        }, 
+        // {
+        //     id: 3,
+        //     projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
+        //     projectTitle: "BuynBulk",
+        //     projectDescription: "Lorem ipsum dolor sit amet Qui quibusdam consequuntur necessitatibus officia nostrum ea in. Voluptatem velit id,aliquid odio repellendus, eligendi architecto omnis laudantiumlibero vero atque rerum?"
+        // }, {
+        //     id: 4,
+        //     projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
+        //     projectTitle: "BuynBulk",
+        //     projectDescription: "Lorem ipsum dolor sit amet Qui quibusdam consequuntur necessitatibus officia nostrum ea in. Voluptatem velit id,aliquid odio repellendus, eligendi architecto omnis laudantiumlibero vero atque rerum?"
+        // },
     ]
     const tech = [
         {
@@ -93,10 +97,12 @@ const Projects = () => {
                                 <div key={item.id} className="my-4">
                                     <div className="md:ml-10  bg-slate-50 h-full md:w-[23rem] w-[18rem] p-4 rounded-tl-3xl rounded-br-3xl">
                                         <img src={item.projectImage} alt="" />
-                                        <h2 className="font-poppins p-5"> {item.projectTitle}</h2>
+                                        <h2 className="font-poppins uppercase p-5 text-[1.3rem] text-orange-700"> {item.projectTitle}</h2>
                                         <p className="font-poppins ">{item.projectDescription}</p>
                                         {/* <button className="bg-orange-600 text-primary font-poppins mr-auto flex m-3 rounded-full px-3 py-1"> Check it Out </button> */}
-                                        <Button>Check it Out</Button>
+                                        <a href= {item.url}>
+                                        <Button> Check it Out</Button>
+                                        </a>
                                     </div>
                                 </div>
                             )

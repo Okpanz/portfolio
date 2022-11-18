@@ -32,7 +32,7 @@ const Header = () => {
     return (
         <>
 
-            <nav className="">
+            <nav className="text-center ">
                 <div className="md:flex flex fixed w-full md:bg-primary bg-[orange] z-[10] p-5 md:p-10 ">
                     <h1 className="text-[#fff] text-right font-poppins text-2xl">Okpanachi .</h1>
                     <div onClick={() => setOpen(!open)} className={`${open ? "block" : " "}`}>
@@ -40,11 +40,11 @@ const Header = () => {
                         <div>
                             {
                                 open ?
-                                <div className="md:hidden text-white ml-auto absolute text-3xl top-[15px] right-[10px] transition-all duration-100 ">
+                                <div className="md:hidden text-white ml-auto absolute text-3xl top-[15px] right-[10px] transition-all ease-in duration-100 ">
                                     <IoMdClose />
                                     </div>
                                     :
-                                    <div className="md:hidden text-white absolute right-[10px] text-3xl top-[15px] transition-all duration-100">
+                                    <div className="md:hidden text-white absolute right-[10px] text-3xl top-[15px] transition-all ease-out duration-100">
                                         <BiMenuAltLeft />
                                     </div>
                             }
@@ -56,7 +56,7 @@ const Header = () => {
 
                     </div>
 
-                    <ul className={` md:flex absolute bg-[orange] transition-all duration-700 ease-in p-3  w-screen z-[-1] right-0 md:bg-[transparent] text-right md:text-center md:static lg:flex  md:w-1/2  mx-auto justify-evenly font-poppins  ${open ? `top-[40px]` : `right-[400px]`} `} >
+                    <ul className={` md:flex absolute bg-[orange] transition-all duration-700 ease-in p-5  w-screen z-[-1] right-0 md:bg-[transparent] text-right md:text-center md:static lg:flex  md:w-1/2  mx-auto justify-evenly font-poppins  ${!open ? `top-[-300px]` : `right-[0px]`} `} >
                         {
                             navItem.map(nav => (
                                 <Link key={nav.id} to={nav.link}>
