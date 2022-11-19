@@ -1,5 +1,9 @@
 // import Atom from 
+import { useState } from "react";
+import MyModal from "./modal";
 const Intro = () => {
+    const [myModal, setMyModal] = useState(false)
+    const handleClose = () => setMyModal(false)
     return (
         <>
             <div className="pt-[6rem] w-[22rem] md:w-screen ml-auto mr-auto md:pt-[10rem] ">
@@ -11,8 +15,9 @@ const Intro = () => {
                         libero vero atque rerum?</h1>
                     <img src="" alt="" />
                     <div className="">
-                        <button className="text-black bg-stone-200 px-5 py-2 rounded-3xl hover:bg-orange-500 transition-all ease-in duration-500 hover:text-white font-poppins">Hire me</button>
+                        <button onClick={() => setMyModal(true)} className="text-black bg-stone-200 px-5 py-2 rounded-3xl hover:bg-orange-500 transition-all ease-in duration-500 hover:text-white font-poppins uppercase">Hire me</button>
                     </div>
+                    <MyModal display={myModal} close={handleClose}/>
                 </div>
             </div>
         </>

@@ -18,6 +18,13 @@ const Projects = () => {
             projectTitle: "Plateau State Investment",
             projectDescription: "PSOSIC is a plateau state government website for investment and tourist attraction to the home of Tourism Plateau State is the twelfth largest state of Nigeria, and is roughly located in the center of the country. "
         }, 
+        {
+            id : 3,
+            url : "https://chefcherrycuisine.com/",
+            projectImage : "images/Chefcherry.png",
+            projectTitle: "ChefCherry Cuisine",
+            projectDescription : "Chef Cherry Cuisine is an Online vendor for baking and interested parties to come online and make purchases (Buy Cakes and Bakes)"
+        }
         // {
         //     id: 3,
         //     projectImage: "images/WhatsApp Image 2022-08-25 at 6.09.19 PM.jpeg",
@@ -100,7 +107,7 @@ const Projects = () => {
                                         <h2 className="font-poppins uppercase p-5 text-[1.3rem] text-orange-700"> {item.projectTitle}</h2>
                                         <p className="font-poppins ">{item.projectDescription}</p>
                                         {/* <button className="bg-orange-600 text-primary font-poppins mr-auto flex m-3 rounded-full px-3 py-1"> Check it Out </button> */}
-                                        <a href= {item.url}>
+                                        <a className="d-flex flex-1 flex-end" href= {item.url}>
                                         <Button> Check it Out</Button>
                                         </a>
                                     </div>
@@ -143,6 +150,7 @@ const Projects = () => {
                     }
                     </ul>
                 </div>
+                
             </div>
         </>
     );
