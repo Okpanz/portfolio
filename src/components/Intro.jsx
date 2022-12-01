@@ -13,7 +13,7 @@ const Intro = () => {
                     <h1 className="text-white md:leading-8 p-2 font-poppins text-left text-lg md:text-[2rem]  md:ml-20">As a Front-End Developer My aim is to provide the best UI that can you can easily interact with and carryout online activities, <br />
                         Building a fully responsive Website that will be available on all devices.<br />
                         Trust me with your Projects</h1>
-                    <img src="images/Okpanz1.png" alt="" />
+                    <img src="images/Okpanz1.png" alt="" className="w-[90%]" />
                     <div className="my-3">
                         <button onClick={() => setMyModal(true)} className="text-black bg-stone-200 px-5 py-2 rounded-3xl hover:bg-orange-500 transition-all ease-in duration-500 hover:text-white font-poppins uppercase">Hire me</button>
                     </div>
