@@ -35,7 +35,7 @@ const Header = () => {
             <nav className="text-center ">
                 <div className="md:flex flex fixed w-full md:bg-primary bg-[orange] z-[10] p-5 md:p-10 ">
                     <h1 className="text-[#fff] text-right font-poppins text-2xl">Okpanachi .</h1>
-                    <div onClick={() => setOpen(!open)} className={`${open ? "block" : " "}`}>
+                    <div onClick={() => setOpen(!open)} className={`${open ? "block" : " "} transition-all`}>
 
                         <div>
                             {

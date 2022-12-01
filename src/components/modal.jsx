@@ -5,9 +5,9 @@ export default function MyModal({display, close}) {
     const [showModal, setShowModal] = useState(false)
     if(!display) return null;
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center">
-      <div className="bg-white p-2 rounded w-[60vw] h-100">
-        <p onClick={close}  className="flex justify-end cursor-pointer">X</p>
+    <div className="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm flex items-center justify-center ">
+      <div className="bg-white p-2 rounded w-[90vw] h-100">
+        <p onClick={close}  className="flex justify-end cursor-pointer text-primary">close</p>
         <h1  className="font-semibold text-center text-xl my-3 text-gray-700">
           Hire Me
         </h1>
@@ -24,7 +24,7 @@ export default function MyModal({display, close}) {
        
         </div>
         <div className="text-center">
-          <button className="px-5 py-2 bg-gray-700 text-white rounded">
+          <button className="px-5 py-2 text-white rounded bg-[green]">
            Send Message
           </button>
         </div>

@@ -8,12 +8,10 @@ const LandingPage = () => {
             <div className="">
             
                 <Header />
-            </div>
-            <div className="">
                 <Intro />
+            </div>
                 <Projects />
                 <About />
-            </div>
 
         </div>
     );
