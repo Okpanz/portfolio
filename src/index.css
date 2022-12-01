@@ -11,13 +11,8 @@
   body{
     overflow-x: hidden;
   }
-<<<<<<< HEAD
+
   html{
     
     scroll-behavior: smooth;
   }
-=======
-html {
-  scroll-behavior: smooth;
-}
->>>>>>> b98faf7303e0e72ce21de99d993fe2574830a260
