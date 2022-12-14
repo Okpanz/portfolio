@@ -28,19 +28,21 @@ const About = () => {
         <>
             <div id="about">
                 <h1 className="text-3xl font-poppins text-white w-2/3 md:w-1/2 ml-auto mr-auto my-5">About Me</h1>
-                <p className="text-2sm font-poppins w-[22rem] md:w-1/2 ml-auto mr-auto text-white">My Name is Okpanachi Emmanuel, A Frontend web Developer and Graphics Designer Skilled in JavaScript and CorelDraw <br /> </p>
-                <div className="flex flex-row justify-center my-20">
+                <p className="text-sm md:text-2xl font-poppins w-[22rem] md:w-1/2 ml-auto mr-auto text-white">My Name is Okpanachi Emmanuel, A Frontend web Developer and Graphics Designer Skilled in JavaScript and CorelDraw 
+                with loads of Exprience gathered over time can undertake any Project, work with team and be a useful member in an organization as well as in a team
+                <br /> </p>
+                <div className="flex flex-col md:flex-row justify-center my-20">
                     {
                         handles.map((item => {
                             return (
-                                <div>
-                                    <div className="flex items-center text-center mx-5">
+                                <div className="my-3">
+                                    <div className="flex items-center justify-center text-center mx-5">
                                         <img src={item.avatar} className=" md:w-[2rem] w-[1rem]" />
                                         <h1 className="text-white md:block text-sm text-center font-poppins mx-2 md:text-3xl text-">
                                             {item.name}
                                         </h1>
                                     </div>
-                                    <p className="text-white text-sm  font-poppins mx-2 md:text-3xl md:text-left">
+                                    <p className="text-white text-[1.5rem] my-1 text-sm flex font-poppins justify-center mx-2 md:text-3xl md:text-left">
                                         <a href={item.link}>   {item.real}</a>
 
                                     </p>

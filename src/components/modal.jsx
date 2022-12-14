@@ -6,10 +6,10 @@ export default function MyModal({display, close}) {
     if(!display) return null;
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm flex items-center justify-center ">
-      <div className="bg-white p-2 rounded w-[90vw] h-100">
+      <div className="bg-white p-2 rounded w-[50vw] h-100">
         <p onClick={close}  className="flex justify-end cursor-pointer text-primary">close</p>
         <h1  className="font-semibold text-center text-xl my-3 text-gray-700">
-          Hire Me
+         Send a Message
         </h1>
         {/* <p className="text-center text-gray-700 mb-5">Sign in</p> */}
 

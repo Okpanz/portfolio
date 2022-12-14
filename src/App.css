@@ -28,7 +28,7 @@ body{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+full
 .App-link {
   color: #61dafb;
 }
@@ -40,4 +40,12 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+.hov{
+}
+.hov:hover{
+  /* height: 10rem; */
+  transform: scale(1.05);
+  /* transform: translate(-50%,0%); */
+  transition: all ease-in-out .5s;
 }

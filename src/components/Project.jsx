@@ -1,6 +1,7 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import Button from './button'
 import {    Link   } from "react-router-dom";
+import {motion} from 'framer-motion'
   
 import {Tech} from "../data"
 const Projects = () => {
@@ -23,7 +24,7 @@ const Projects = () => {
             url : "https://chefcherrycuisine.com/",
             projectImage : "images/Chefcherry.png",
             projectTitle: "ChefCherry Cuisine",
-            projectDescription : "Chef Cherry Cuisine is an Online vendor for baking and interested parties to come online and make purchases (Buy Cakes and Bakes)"
+            projectDescription : "Chef Cherry Cuisine is an Online vendor for baking and interested parties to come online and make purchases (Sells Cake and Bakes)"
         }
         // {
         //     id: 3,
@@ -103,7 +104,7 @@ const Projects = () => {
                             return (
                                 <div key={item.id} className="my-4">
                                     <div className="md:ml-10  bg-slate-50 h-full md:w-[23rem] w-[18rem] p-4 rounded-tl-3xl rounded-br-3xl">
-                                        <img src={item.projectImage} alt="" />
+                                        <img src={item.projectImage} alt="" className="hov" />
                                         <h2 className="font-poppins uppercase p-5 text-[1.3rem] text-orange-700"> {item.projectTitle}</h2>
                                         <p className="font-poppins ">{item.projectDescription}</p>
                                         {/* <button className="bg-orange-600 text-primary font-poppins mr-auto flex m-3 rounded-full px-3 py-1"> Check it Out </button> */}
